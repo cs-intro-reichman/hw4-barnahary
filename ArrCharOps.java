@@ -156,6 +156,15 @@ public class ArrCharOps {
         if (str1 == null || str2 == null) { 
             return -2;
         }
+            if (str1.isEmpty() && str2.isEmpty()) {
+                return 0; 
+            }
+            if (str1.isEmpty()) {
+                return -1; 
+            }
+            if (str2.isEmpty()) {
+                return 1; 
+        }
         int len1 = str1.length();
         int len2 = str2.length();
         int minLen = Math.min(len1, len2);
