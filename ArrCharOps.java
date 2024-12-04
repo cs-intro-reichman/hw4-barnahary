@@ -163,11 +163,15 @@ public class ArrCharOps {
         for (int i = 0; i < minLen; i++) { 
             char ch1 = str1.charAt(i);
             char ch2 = str2.charAt(i);
+
             if (ch1 != ch2) { 
-                return ch1 - ch2;
+                return (ch1 < ch2) ? -1 : 1; 
             }
         }
+        if (len1 != len2) { 
+            return (len1 < len2) ? -1 : 1;
+        }
        
-        return Integer.compare(len1, len2);
+        return 0;
     }
 }
