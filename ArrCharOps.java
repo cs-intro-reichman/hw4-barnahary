@@ -122,7 +122,7 @@ public class ArrCharOps {
         long hash = 0;
         int n = arr.length;
         for (int i = 0; i < n; i++) { 
-            hash += arr[i] * Math.pow(7,n - i - 1)
+            hash += arr[i] * Math.pow(7,n - i - 1);
         }
         return hash;
     }
