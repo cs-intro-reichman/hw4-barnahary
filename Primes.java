@@ -31,7 +31,7 @@ public class Primes {
             }
         }
         double presentage = (primeCount * 100.0) / (n - 1);
-        System.out.printf("There are %d primes between 2 and %d (%.of%% are primes)\n", primeCount, n, presentage);
+        System.out.printf("There are %d primes between 2 and %d (%.2f%% are primes)\n", primeCount, n, presentage);
         
     }
 }
