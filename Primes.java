@@ -23,15 +23,15 @@ public class Primes {
             p++;
         }
         int primeCount = 0;
-        System.out.println("Prime numbers up to " + n + " : ");
+        System.out.println("Prime numbers up to " + n + ":");
         for (int i = 2; i <= n; i++) { 
             if (isPrime[i]) { 
                 System.out.println(i);
                 primeCount++;
             }
         }
-        System.out.println("There are " + primeCount + " primes between 2 and " + n + ".");
-        double presentage = (primeCount * 100.0) / (n - 1);
-        System.out.printf("(%.2f%% are primes)\n", presentage);
+        System.out.println("There are " + primeCount + " primes between 2 and " + n + " (" + (primeCount * 100 / (n - 1)) + "% are primes)");
+        
+        
     }
 }

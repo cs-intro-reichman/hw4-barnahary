@@ -164,6 +164,9 @@ public class ArrCharOps {
                 return ch1 - ch2;
             }
         }
-        return Integer.compare(len1, len2);
+        if ( len1 != len2) { 
+            return len1 - len2;
+        }
+        return 0;
     }
 }
